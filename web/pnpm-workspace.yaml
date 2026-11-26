@@ -15,4 +15,4 @@ saveExact: true
 overrides:
   # oxfmt 0.35, which eslint-plugin-format caps us at, pins tinypool 2.1.0
   # (GHSA advisories fixed in 2.1.2).
-  oxfmt>tinypool: 2.1.2
+  oxfmt>tinypool: 2.2.0
