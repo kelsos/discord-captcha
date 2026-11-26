@@ -78,6 +78,9 @@ pointing `<NAME>_FILE` at an empty file, is an error.
 
 ## Development
 
+Maintainers and coding agents should also read [AGENTS.md](./AGENTS.md), which covers the checks to
+run, dependency updates, workflow checks and releases.
+
 ### Prerequisites
 
 - Go 1.27+
