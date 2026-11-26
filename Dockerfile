@@ -1,5 +1,5 @@
 # --- Build Frontend ---
-FROM node:24.21.0-alpine AS web-build
+FROM node:24.22.3-alpine AS web-build
 WORKDIR /build
 COPY web/package.json web/pnpm-lock.yaml web/pnpm-workspace.yaml ./
 RUN corepack enable && pnpm install --frozen-lockfile
@@ -11,7 +11,7 @@ ENV VITE_SITE_URL=${VITE_SITE_URL}
 RUN pnpm build
 
 # --- Build Go ---
-FROM golang:1.27.3-alpine AS go-build
+FROM golang:1.27.4-alpine AS go-build
 WORKDIR /build
 COPY bot/go.mod bot/go.sum ./
 RUN go mod download
